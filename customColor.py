@@ -154,6 +154,10 @@ def customColor(session, filepath):
 
     run(session, color_cmd)
    
+    run(session, "ui tool show \"scale bar\"")  #display the scale bar
+    run(session, "ui tool show \"color key\"")
+    run(session, "ui mousemode right \"color key\"")
+    run(session, "ui mousemode right \"color key\"")
     f.close() 
 
 def register_command(logger):
